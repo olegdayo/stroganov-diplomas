@@ -1,1 +1,3 @@
 # Stroganov Diplomas Website
+
+It should be rewritten in Rust + WebAssembly someday...
