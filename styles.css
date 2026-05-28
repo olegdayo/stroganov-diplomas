@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+
+  /* rainbow text */
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* curved / pretty */
+  display: inline-block;
+  transform: rotate(-3deg) skew(-6deg);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 12px rgba(255,255,255,0.4);
+
+  /* reflection */
+  -webkit-box-reflect: below 8px
+    linear-gradient(transparent, rgba(255,255,255,0.35));
+
+  /* animated rainbow */
+  animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+  to {
+    background-position: 300% center;
+  }
+}
